@@ -5,11 +5,10 @@ import { EyeIcon } from "@heroicons/react/24/solid";
 
 const QuizPerCatagory = () => {
   const Datas = useLoaderData();
-  const [quiz, SetQuiz] = useState();
   const [showans, SetShowans] = useState(false);
   const { data } = Datas;
   const { name, questions } = data;
-  const chekCorrectAnswer = () => {
+  const chekCorrectAnswer = (quiz) => {
     const rightanswer = questions.find(
       (question) => question.correctAnswer === quiz
     );
@@ -37,7 +36,7 @@ const QuizPerCatagory = () => {
           return (
             <div className="m-10 w-full">
               <h1 className=" w-full text-center font-semibold m-5 flex justify-center items-center">
-                {question.question.slice(3, -4)}
+                Question: {question.question.slice(3, -4)}
                 <span className="pl-2">
                   <EyeIcon
                     className="h-5 w-5 text-black "
@@ -52,7 +51,7 @@ const QuizPerCatagory = () => {
                     : `hidden`
                 }
               >
-                {question.correctAnswer}
+                Ans: {question.correctAnswer}
               </h1>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-5  w-full mx-auto">
@@ -64,8 +63,7 @@ const QuizPerCatagory = () => {
                         type="radio"
                         value={option}
                         name="quiz"
-                        onChange={(e) => SetQuiz(e.target.value)}
-                        onClick={chekCorrectAnswer}
+                        onClick={() => chekCorrectAnswer(option)}
                       />
                       <label className="text-center" for="quiz">
                         {option}
