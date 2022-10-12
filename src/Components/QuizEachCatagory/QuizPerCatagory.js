@@ -40,7 +40,7 @@ const QuizPerCatagory = () => {
               <div className="grid grid-cols-2 gap-5  w-full mx-auto">
                 {options.map((option) => {
                   return (
-                    <div className="bg-emerald-600   cursor-pointer shadow-xl w-96 p-4 mx-auto rounded-xl">
+                    <div className="bg-emerald-600  shadow-xl w-96 p-4 mx-auto rounded-xl">
                       <input
                         className="cursor-pointer"
                         type="radio"
@@ -49,7 +49,7 @@ const QuizPerCatagory = () => {
                         onChange={(e) => SetQuiz(e.target.value)}
                         onClick={chekCorrectAnswer}
                       />
-                      <label className="text-center cursor-pointer" for="quiz">
+                      <label className="text-center" for="quiz">
                         {option}
                       </label>
                     </div>
