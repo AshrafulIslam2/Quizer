@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <ul className="bg-cyan-200 p-4 text-center">
+      <ul className="bg-cyan-200 p-4 text-end w-auto">
         <Link className="pr-2 hover:bg-teal-600" to="/">
           Home
         </Link>

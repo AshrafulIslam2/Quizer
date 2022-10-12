@@ -19,8 +19,8 @@ const QuizPerCatagory = () => {
   };
 
   return (
-    <div>
-      <div>
+    <div className="w-full">
+      <div className="w-full">
         <h1 className="text-2xl text-center  font-semibold">
           Quiz Name: <span className="text-4xl font-bold">{name}</span>
         </h1>
@@ -29,15 +29,15 @@ const QuizPerCatagory = () => {
           <Toaster />
         </div>
       </div>
-      <div>
+      <div className="w-full">
         {questions.map((question) => {
           const { options } = question;
           return (
-            <div className="m-10">
-              <h1 className="text-center font-semibold m-5">
+            <div className="m-10 w-full">
+              <h1 className=" w-full text-center font-semibold m-5">
                 {question.question.slice(3, -4)}
               </h1>
-              <div className="grid grid-cols-2 gap-5  w-full mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-5  w-full mx-auto">
                 {options.map((option) => {
                   return (
                     <div className="bg-emerald-600  shadow-xl w-96 p-4 mx-auto rounded-xl">

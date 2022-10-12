@@ -26,7 +26,7 @@ const Statistics = () => {
     <div>
       {renderLineChart}
       <h1
-        className="text-center
+        className="text-center text-2xl text-orange-300 font-bold font-mono mt-5
       "
       >
         This Chart is about Quiz Total{" "}

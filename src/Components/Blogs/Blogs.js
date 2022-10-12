@@ -2,12 +2,12 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div>
-      <div className="m-10 bg-lime-100 p-10 rounded-xl shadow-2xl">
-        <h1 className="text-4xl font-mono font-bold leading-loose">
+    <div className="w-full">
+      <div className="m-10 w-full bg-lime-100 p-10 rounded-xl shadow-2xl">
+        <h1 className="text-lg  lg:text-4xl font-mono font-bold leading-loose">
           What is the purpose of the react Router?
         </h1>
-        <p className="text-2xl tracking-wide indent-7 font-mono">
+        <p className=" text-sm lg:text-2xl tracking-wide indent-7 font-mono">
           ReactJS Router is mainly used for developing Single Page Web
           Applications. React Router is used to define multiple routes in the
           application. When a user types a specific URL into the browser, and if
@@ -15,11 +15,11 @@ const Blogs = () => {
           will be redirected to that particular route.
         </p>
       </div>
-      <div className="m-10 bg-lime-100 p-10 rounded-xl shadow-2xl">
-        <h1 className="text-4xl font-mono font-bold leading-loose">
+      <div className="m-10 w-full bg-lime-100 p-10 rounded-xl shadow-2xl">
+        <h1 className="text-lg  lg:text-4xl font-mono font-bold leading-loose">
           How does context Api Works?
         </h1>
-        <p className="text-2xl tracking-wide indent-7 font-mono">
+        <p className="text-sm lg:text-2xl tracking-wide indent-7 font-mono">
           The React Context API is a way for a React app to effectively produce
           global variables that can be passed around. This is the alternative to
           "prop drilling" or moving props from grandparent to child to parent,
@@ -27,11 +27,11 @@ const Blogs = () => {
           state management using Redux.
         </p>
       </div>
-      <div className="m-10 bg-lime-100 p-10 rounded-xl shadow-2xl">
-        <h1 className="text-4xl font-mono font-bold leading-loose">
+      <div className="m-10 w-full bg-lime-100 p-10 rounded-xl shadow-2xl">
+        <h1 className="text-lg  lg:text-4xl font-mono font-bold leading-loose">
           How Does useref works?
         </h1>
-        <p className="text-2xl tracking-wide indent-7 font-mono">
+        <p className="text-sm lg:text-2xl tracking-wide indent-7 font-mono">
           {" "}
           hook is a special function which enables one use state and other React
           features without writing ES6 class components which are generally
