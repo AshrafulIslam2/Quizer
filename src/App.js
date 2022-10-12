@@ -35,6 +35,14 @@ function App() {
         },
       ],
     },
+    {
+      path: "*",
+      element: (
+        <div className="text-8xl text-center font-extrabold text-red-600 mt-52">
+          Erorr 404
+        </div>
+      ),
+    },
   ]);
   return (
     <div>
