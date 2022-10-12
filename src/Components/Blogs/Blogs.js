@@ -2,8 +2,8 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div className="w-full">
-      <div className="m-10 w-full bg-lime-100 p-10 rounded-xl shadow-2xl">
+    <div className="w-auto">
+      <div className="m-10 w-auto bg-lime-100 p-10 rounded-xl shadow-2xl">
         <h1 className="text-lg  lg:text-4xl font-mono font-bold leading-loose">
           What is the purpose of the react Router?
         </h1>
@@ -15,7 +15,7 @@ const Blogs = () => {
           will be redirected to that particular route.
         </p>
       </div>
-      <div className="m-10 w-full bg-lime-100 p-10 rounded-xl shadow-2xl">
+      <div className="m-10 w-auto bg-lime-100 p-10 rounded-xl shadow-2xl">
         <h1 className="text-lg  lg:text-4xl font-mono font-bold leading-loose">
           How does context Api Works?
         </h1>
@@ -27,7 +27,7 @@ const Blogs = () => {
           state management using Redux.
         </p>
       </div>
-      <div className="m-10 w-full bg-lime-100 p-10 rounded-xl shadow-2xl">
+      <div className="m-10 w-auto bg-lime-100 p-10 rounded-xl shadow-2xl">
         <h1 className="text-lg  lg:text-4xl font-mono font-bold leading-loose">
           How Does useref works?
         </h1>
