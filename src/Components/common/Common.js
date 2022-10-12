@@ -4,7 +4,7 @@ const Common = () => {
   return (
     <div>
       <div className="m-5 rounded-lg shadow-xl p-5">
-        <h1 className="  text-center text-2xl font-mono tracking-widest">
+        <h1 className="  text-center text-2xl font-mono tracking-widest pb-3">
           WeLL Come To{" "}
           <span className=" text-4xl font-extrabold text-yellow-300">
             Ash Quizer
